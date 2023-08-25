@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://icon-library.com/images/my-profile-icon-png/my-profile-icon-png-3.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>My App</title>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="dashBoardHeader">
+                <p class="textOfHeader">Personal Blogging App <span id="nameInHeader"
+                        class="nameInHeader"></span><button class="logOutButton" id="logOutButton">Log Out</button></p>
+
+            </div>
+            <div class="dashBoardHeading">
+                <p class="dashBoard" id="dashBoard"></p>
+            </div>
+            <div class="postMaker">
+                <h2>Let's Create A Blog.</h2>
+                <input type="text" maxlength="15" name="postInput" id="postInput" placeholder="Enter A Heading."
+                    class="postInput">
+                <textarea cols="30" rows="10" id="postText"></textarea>
+                <button id="publishBlog">Publish Blog</button>
+            </div>
+            <div class="myBlogsHeading">My Blogs</div>
+            <div class='post'>
+                <img class="imageInpost"
+                    src="https://icon-library.com/images/my-profile-icon-png/my-profile-icon-png-3.jpg" alt="">
+                <span class="headingInPost">Example<span class="nameInPost">Azlan</span></span><br>
+                <div>
+                    At dolorem provident inventore sapiente error esse vitae sunt obcaecati, fuga repellat
+                    voluptas, aperiam reprehenderit! <br>
+                    Make Like This!!
+                </div>
+                <button id='' class='deleteButton'>Delete</button>
+                <button class='deleteButton' >Edit</button>
+            </div>
+            <div id="mainDivInPost">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="app.js"></script>
+
+</html>

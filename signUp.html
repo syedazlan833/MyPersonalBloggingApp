@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://icon-library.com/images/my-profile-icon-png/my-profile-icon-png-3.jpg"
+        type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>SignUp</title>
+</head>
+
+<body class="body">
+    <div id="main" class="form-container">
+        <p class="title">Sign Up</p>
+        <form class="form">
+            <div class="input-group">
+                <label for="username">First Name</label>
+                <input type="text" maxlength="3" id="firstname" name="email">
+            </div>
+            <div class="input-group">
+                <label for="username">Last Name</label>
+                <input type="text" id="lastname" maxlength="17" name="email">
+            </div>
+            <div class="input-group">
+                <label for="username">Email</label>
+                <input type="email" id="username" name="email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" maxlength="8" id="password" placeholder="">
+            </div>
+            <div>
+                <label class="cyberpunk-checkbox-label" id="show_password">
+                    <input class="cyberpunk-checkbox" name="cyber" type="checkbox">Show Password</label>
+            </div>
+            <button id="register" type="submit" class="sign">Sign up</button>
+        </form>
+        <p class="signup">Already have an account?
+            <a rel="" href="login.html" onclick="" class="">Login in</a>
+        </p>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://icon-library.com/images/my-profile-icon-png/my-profile-icon-png-3.jpg"
+    type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Login</title>
+</head>
+
+<body class="body">
+  <div id="main" class="form-container">
+    <p class="title">Login</p>
+    <form class="form">
+      <div class="input-group">
+        <label for="username">Email</label>
+        <input type="email" id="username" name="email">
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" maxlength="8" autocomplete="current-password">
+      </div>
+      <div>
+        <label class="cyberpunk-checkbox-label" id="show_password">
+          <input class="cyberpunk-checkbox" name="cyber" autocomplete="current-password" type="checkbox">Show
+          Password</label>
+      </div>
+      <button id="login" class="sign" onclick="">Login in</button>
+    </form>
+   
+    <p class="signup">Don't have an account?
+      <a rel="" href="signUp.html" onclick="" class="">Sign up</a>
+    </p>
+  </div>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="firebase.js"></script>
+</body>
+
+</html>

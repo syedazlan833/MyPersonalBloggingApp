@@ -1,0 +1,632 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-container {
+    width: 280px;
+    border-radius: 0.75rem;
+    background-image: linear-gradient(to right, rgb(204, 102, 204), rgb(252, 225, 229));
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+}
+
+.body {
+    background-image: linear-gradient(to right, rgb(204, 102, 204), white);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid white;
+    outline: 0;
+    background-image: linear-gradient(to right, rgb(207, 91, 207), rgb(253, 210, 253));
+    padding: 0.65rem 1rem;
+    color: rgba(243, 244, 246, 1);
+}
+
+.input-group input:focus {
+    border-color: rgb(204, 102, 204);
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+    margin: 8px 0 14px 0;
+}
+
+.forgot a,
+.signup a {
+    color: rgba(243, 244, 246, 1);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot a:hover,
+.signup a:hover {
+    text-decoration: underline rgb(204, 102, 204);
+}
+
+.sign {
+    display: block;
+    width: 100%;
+    background-color: rgb(204, 102, 204);
+    border: 1px solid rgb(204, 102, 204);
+    padding: 0.68rem;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    margin-top: 20px;
+    color: rgb(252, 227, 231);
+    font-size: 14px;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sign:hover {
+    background-color: rgb(196, 67, 196);
+    color: white;
+
+}
+
+.social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#username {
+    width: 240px;
+    color: black;
+}
+
+#firstname {
+    width: 240px;
+    color: black;
+}
+
+#lastname {
+    width: 240px;
+    color: black;
+}
+
+#password {
+    width: 240px;
+    color: black;
+
+}
+
+#login_username {
+    width: 240px;
+    color: black;
+
+}
+
+#login_password {
+    width: 240px;
+    color: black;
+
+}
+
+.line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgb(204, 102, 204);
+}
+
+.social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(156, 163, 175, 1);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.56rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+.social-icons .icon svg {
+    height: 1rem;
+    width: 1rem;
+    fill: #fff;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: black;
+    margin-top: 15px;
+}
+
+.cyberpunk-button {
+    background-color: rgb(196, 63, 196);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(211, 52, 211);
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: 0px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+    content: "";
+    background-color: rgb(209, 63, 209);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.show {
+    margin-top: 20px;
+}
+
+.card-client {
+    background-image: linear-gradient(to right, rgb(204, 102, 204), rgb(250, 216, 252));
+    width: 15rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 120px;
+    box-shadow: 0 6px 10px #212121;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.user-picture {
+    overflow: hidden;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid #fff;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.user-picture img {
+    width: 100%;
+    fill: currentColor;
+}
+
+.name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #fff;
+}
+
+.social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+    background: #262626;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+
+.tooltip-social:after {
+    content: " ";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+    border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+}
+
+
+.logOut {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.logOut:hover {
+    border: 1px solid rgb(231, 100, 231);
+    color: rgb(234, 90, 247);
+}
+
+.logOut:active {
+    transform: scale(.9);
+}
+
+#main {
+    padding: 24px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dashBoardHeader {
+    color: white;
+    background-color: rgb(204, 102, 204);
+    width: 98.8%;
+    padding: 8px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.textOfHeader {
+    margin-left: 150px;
+}
+
+.dashBoardHeading {
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    background-color: white;
+}
+
+.dashBoard {
+    margin-left: 140px;
+}
+
+.postMaker {
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 970px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+}
+
+.nameInHeader {
+    margin-left: 630px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nameInHeader:hover {
+    opacity: 0.8;
+}
+
+
+.logOutButton {
+    margin-left: 30px;
+    width: 100px;
+    padding: 5px;
+    color: white;
+    border: 2px solid rgb(204, 102, 204);
+    background-color: rgb(204, 102, 204);
+    font-size: 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.logOutButton:hover {
+    opacity: 0.8;
+}
+
+.postInput {
+    padding: 8px;
+    border: 2px solid rgb(204, 102, 204);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.postInput:active {
+    border-color: rgb(204, 102, 204);
+}
+
+.postMaker>textarea {
+    margin-top: 10px;
+    border: 2px solid rgb(204, 102, 204);
+    border-radius: 3px;
+}
+
+.postMaker>button {
+    margin-top: 10px;
+    padding: 8px;
+    border: 2px solid rgb(204, 102, 204);
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(204, 102, 204);
+    cursor: pointer;
+}
+
+.postMaker>button:hover {
+    border: 2px solid rgb(204, 102, 204);
+    background-color: rgb(204, 102, 204);
+    color: white;
+}
+
+.postMaker>button:active {
+    scale: 0.9;
+}
+
+.postMaker>h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(to right, rgb(204, 102, 204), white);
+    height: auto;
+}
+
+.post {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+}
+
+.headingInPost {
+    position: relative;
+    left: 45px;
+    top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.imageInpost {
+    margin-top: 10px;
+    width: 40px;
+
+}
+
+.myBlogsHeading {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 170px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nameInPost {
+    position: relative;
+    margin-left: 14px;
+    font-size: 13px;
+    color: grey;
+}
+
+.deleteButton {
+    margin-top: 10px;
+    padding: 8px;
+    border: 2px solid rgb(204, 102, 204);
+    border-radius: 3px;
+    width: 100%;
+    background-color: white;
+    color: rgb(204, 102, 204);
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    border: 2px solid rgb(204, 102, 204);
+    background-color: rgb(204, 102, 204);
+    color: white;
+}
+
+.profile {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.dashBoardHeadingOfProfile {
+    padding: 7px;
+    background-color: white;
+    font-size: 23px;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media screen and (max-width: 330px) {
+    .textOfHeader {
+        margin-left: 0px;
+    }
+
+    .dashBoard {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .nameInHeader {
+        margin-left: 10px;
+    }
+
+    .dashBoardHeading {
+        font-size: 18px;
+
+    }
+
+    .dashBoardHeader {
+        font-size: 20px;
+    }
+
+    .dashBoardHeader>p {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+
+    .logOutButton {
+        margin-left: 100px;
+    }
+    .postMaker {
+        width: 250px;
+    }
+    .myBlogsHeading {
+        margin-left: 10px;
+    }
+    .post {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-color: white;
+    }
+    .profile{
+        margin-left: 20px;
+    }
+    .dashBoardHeadingOfProfile{
+        padding: 3px;
+    }
+}
